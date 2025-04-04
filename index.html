@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev's Portfolio</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9983d3a171.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <img src="images/logo-removebg-preview.png" alt="logo">
+                <ul class="list">
+                    <li><a href="#header">Home </a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="headertext">
+                <p>Mobile App Developer</p>
+                <h1>Hi, I am <span>Dev</span> Patel</h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- ----------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" alt="About">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Dev Patel, a passionate and driven Software Developer currently studying Mobile Application Development and Strategy at George Brown College. With hands-on experience in building mobile applications using React Native, Expo CLI, and Firebase Firestore, I strive to create engaging, responsive, and user-friendly applications.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> Programming Languages</span><br>JavaScript, HTML, CSS, SwiftUI, Kotlin</li>
+                            <li><span>Database Management</span><br>Firebase Firestore, Local Storage</li>
+                            <li><span>Frameworks & Libraries</span><br>React Native, Expo CLI, React Navigation,Axios/Fetch API</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>Technical Support & Maintenance - Cyber Cafe</span><br>Maintained computer systems and networks, ensuring seamless internet connectivity and system performance.
+
+                            </li>
+                            <li><span>Software Developer
+                                Tech Solutions Pvt Ltd</span><br>Provided application support and assisted with setup, configuration, and troubleshooting of IT systems.</li>
+                            <li><span>Supervisor - Real Canadian Superstore</span><br>Led and supervised a team of front-end associates, ensuring smooth operations and customer satisfaction.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>George Brown College | Toronto</span><br>Mobile App Development &amp; Strategy (GPA: 4.0)</li>
+                            <li><span>Sir Sanford Fleming College| Peterborough</span><br>Computer Engineering Technician (GPA: 2.9)</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---serivces---- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>React Native App Development: Custom-built mobile apps with a smooth, native-like experience for both iOS and Android.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>Frontend Development: Build visually stunning, user-friendly websites using HTML, CSS, JavaScript, and React.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>API Integration</h2>
+                    <p>Web & Mobile API Integration: Connect your app or website to third-party APIs (e.g., CoinLore API, Weather API, etc.) to fetch live data or perform specific actions.
+                        Real-Time Data Handling: Implement real-time data updates and synchronization using Firebase, WebSocket, or RESTful APIs.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/project1.jpg" alt="1">
+                    <div class="layer">
+                        <h3>Landlord Property Project | George Brown College</h3>
+                        <p>Developed an Android app for landlords to create and manage property listings using Firebase database.
+                            Implemented CRUD operations, user authentication, and optimized search functionality.
+                            Integrated Firebase for data persistence and optimized search features.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project2.jpg" alt="2">
+                    <div class="layer">
+                        <h3>Crypto App | George Brown College</h3>
+                        <p>Developed a cryptocurrency statistics app for real-time market data using CoinLore API.
+                            Implemented API integration to fetch live cryptocurrency prices, exchanges, and market statistics.  
+                            Integrated Firebase Firestore for persistent data storage, allowing users to save and retrieve their favorite cryptocurrencies.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pro.jpg" alt="3">
+                    <div class="layer">
+                        <h3>APOD NASA Python Project | Fleming College</h3>
+                        <p>Developed a Python application that retrieves NASA’s Astronomy Picture of the Day (APOD) using the NASA API.
+                            Integrated API requests to fetch and display daily space images along with detailed explanations.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>djpatel2232004@gmail.com</p>
+                    <!-- <p><i class="fa-solid fa-phone"></i>24</p> -->
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dev-patel-81a425279/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <!-- <a href="images/about.jpg" download class="btn btn2">Download CV</a> -->
+
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
